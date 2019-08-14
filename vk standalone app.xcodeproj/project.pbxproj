@@ -15,7 +15,13 @@
 		63327B4223002ADC00350B10 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63327B4123002ADC00350B10 /* LoginFormController.swift */; };
 		63327B442300370E00350B10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63327B432300370E00350B10 /* SecondViewController.swift */; };
 		63327B462300371D00350B10 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63327B452300371D00350B10 /* FirstViewController.swift */; };
-		63C03EAD2300968600FB6E8B /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C03EAC2300968600FB6E8B /* MealTableViewCell.swift */; };
+		639E18BE2301BF8400930D6A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E18BD2301BF8400930D6A /* TableViewCell.swift */; };
+		63A3023623049025000D76D7 /* AllUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3023523049025000D76D7 /* AllUsersController.swift */; };
+		63A3023823049059000D76D7 /* AllUsersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3023723049059000D76D7 /* AllUsersCell.swift */; };
+		63A3023B23049812000D76D7 /* AllGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3023A23049812000D76D7 /* AllGroupCell.swift */; };
+		63A3023D23049839000D76D7 /* AllGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3023C23049839000D76D7 /* AllGroupController.swift */; };
+		63A302442304A405000D76D7 /* AllFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A302432304A405000D76D7 /* AllFriendsController.swift */; };
+		63A302462304A429000D76D7 /* AllFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A302452304A429000D76D7 /* AllFriendsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +35,13 @@
 		63327B4123002ADC00350B10 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 		63327B432300370E00350B10 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		63327B452300371D00350B10 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		63C03EAC2300968600FB6E8B /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		639E18BD2301BF8400930D6A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		63A3023523049025000D76D7 /* AllUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsersController.swift; sourceTree = "<group>"; };
+		63A3023723049059000D76D7 /* AllUsersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsersCell.swift; sourceTree = "<group>"; };
+		63A3023A23049812000D76D7 /* AllGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupCell.swift; sourceTree = "<group>"; };
+		63A3023C23049839000D76D7 /* AllGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupController.swift; sourceTree = "<group>"; };
+		63A302432304A405000D76D7 /* AllFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsController.swift; sourceTree = "<group>"; };
+		63A302452304A429000D76D7 /* AllFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +80,50 @@
 				63327B362300295000350B10 /* Assets.xcassets */,
 				63327B382300295000350B10 /* LaunchScreen.storyboard */,
 				63327B3B2300295000350B10 /* Info.plist */,
+				63D00B39230411C300A4F93F /* Controller */,
+			);
+			path = "vk standalone app";
+			sourceTree = "<group>";
+		};
+		63A30239230497E8000D76D7 /* UserGroup */ = {
+			isa = PBXGroup;
+			children = (
+				63A3023C23049839000D76D7 /* AllGroupController.swift */,
+				63A3023A23049812000D76D7 /* AllGroupCell.swift */,
+			);
+			path = UserGroup;
+			sourceTree = "<group>";
+		};
+		63A3023E2304A12D000D76D7 /* FriendsCollectionVC */ = {
+			isa = PBXGroup;
+			children = (
+				63A302432304A405000D76D7 /* AllFriendsController.swift */,
+				63A302452304A429000D76D7 /* AllFriendsCell.swift */,
+			);
+			path = FriendsCollectionVC;
+			sourceTree = "<group>";
+		};
+		63CEB1A22304679A002CB773 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				63A3023523049025000D76D7 /* AllUsersController.swift */,
+				63A3023723049059000D76D7 /* AllUsersCell.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		63D00B39230411C300A4F93F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63A3023E2304A12D000D76D7 /* FriendsCollectionVC */,
+				63A30239230497E8000D76D7 /* UserGroup */,
+				63CEB1A22304679A002CB773 /* Users */,
 				63327B4123002ADC00350B10 /* LoginFormController.swift */,
 				63327B432300370E00350B10 /* SecondViewController.swift */,
 				63327B452300371D00350B10 /* FirstViewController.swift */,
-				63C03EAC2300968600FB6E8B /* MealTableViewCell.swift */,
+				639E18BD2301BF8400930D6A /* TableViewCell.swift */,
 			);
-			path = "vk standalone app";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +197,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A3023823049059000D76D7 /* AllUsersCell.swift in Sources */,
+				63A3023623049025000D76D7 /* AllUsersController.swift in Sources */,
 				63327B462300371D00350B10 /* FirstViewController.swift in Sources */,
+				63A3023D23049839000D76D7 /* AllGroupController.swift in Sources */,
 				63327B442300370E00350B10 /* SecondViewController.swift in Sources */,
-				63C03EAD2300968600FB6E8B /* MealTableViewCell.swift in Sources */,
+				639E18BE2301BF8400930D6A /* TableViewCell.swift in Sources */,
 				63327B4223002ADC00350B10 /* LoginFormController.swift in Sources */,
+				63A302462304A429000D76D7 /* AllFriendsCell.swift in Sources */,
 				63327B322300294F00350B10 /* ViewController.swift in Sources */,
+				63A3023B23049812000D76D7 /* AllGroupCell.swift in Sources */,
+				63A302442304A405000D76D7 /* AllFriendsController.swift in Sources */,
 				63327B302300294F00350B10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
