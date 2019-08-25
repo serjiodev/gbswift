@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:vk standalone app.xcodeproj">
+      location = "self:../vk standalone app">
    </FileRef>
 </Workspace>
