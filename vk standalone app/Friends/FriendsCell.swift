@@ -14,6 +14,11 @@ class FriendsCell: UITableViewCell {
     @IBOutlet var userNameLabel: UILabel!
     @IBOutlet var avatarView: AvatarView!
     
+    
+    
+    
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
