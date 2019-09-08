@@ -93,9 +93,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="yQC-tO-FJi"/>
                     <connections>
+                        <outlet property="loginBtn" destination="ipk-xF-xk5" id="3wq-hb-O3y"/>
                         <outlet property="loginTextField" destination="EWp-3E-wAy" id="LgJ-Ad-vG5"/>
                         <outlet property="passwordTextField" destination="6nT-r0-evI" id="p8J-mS-7cf"/>
                         <outlet property="scrollView" destination="EK5-rE-PkN" id="pC3-Tn-hGo"/>
+                        <outlet property="titleTopConstraint" destination="wr4-Mc-zlU" id="68Q-PS-yy9"/>
                         <segue destination="nfV-pp-rea" kind="presentation" identifier="SuccessLogin" id="ndv-2z-krE"/>
                     </connections>
                 </viewController>
@@ -236,35 +238,6 @@
             </objects>
             <point key="canvasLocation" x="4880" y="506"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="fNI-bQ-j0D">
-            <objects>
-                <tableViewController id="ztY-81-Duz" customClass="NewsTableViewController" customModule="vk_standalone_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Y4-ZO-CtV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QCP-8k-Kzz" customClass="NewsTableViewCell" customModule="vk_standalone_app" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="NewsView" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QCP-8k-Kzz" id="9hU-kh-fGE" customClass="NewsView">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ztY-81-Duz" id="qY7-gU-Nyp"/>
-                            <outlet property="delegate" destination="ztY-81-Duz" id="sF8-SM-An1"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="9f3-7s-FDs"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Za-D4-FPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3890" y="117"/>
-        </scene>
         <!--News-->
         <scene sceneID="M1n-PX-bBx">
             <objects>
@@ -275,12 +248,29 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ztY-81-Duz" kind="relationship" relationship="rootViewController" id="pob-4p-L6b"/>
+                        <segue destination="JID-iV-1ca" kind="presentation" id="sFI-CI-IJq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVt-HD-oq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3012" y="117"/>
+        </scene>
+        <!--News Table View Controller-->
+        <scene sceneID="ils-LD-QGT">
+            <objects>
+                <tableViewController id="JID-iV-1ca" customClass="NewsTableViewController" customModule="vk_standalone_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AsG-IY-aNf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableViewNews" destination="AsG-IY-aNf" id="dfb-3h-qdr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vC-SH-ldY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3890" y="117"/>
         </scene>
         <!--Friends-->
         <scene sceneID="S3n-3N-Xj9">

@@ -9,13 +9,34 @@
 import UIKit
 
 class NewsTableViewController: UITableViewController {
+    
+    
+    @IBOutlet var tableViewNews: UITableView!
+    
+    var news: [News] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         tableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsTableViewCell")
         
+        self.tableView.rowHeight = 400
+        
+        news.append(News(title: "Mercedes can fight Ferrari", imageName: "mer", newsName: "Monza win, says Hamilton", contentDesc: "Lewis Hamilton found himself in the melee of drivers who failed to make it over the line in time to start his final qualifying effort in Monza."))
+        
+        news.append(News(title: "Has Verstappen held", imageName: "wil", newsName: "HOW IT WORKS", contentDesc: "Charles Leclerc secured is maiden Formula 1 victory in tragic circumstances at the Belgian Grand Prix, putting in a mesmeric performance"))
+        
+        news.append(News(title: "Ferrari wary of Mercedes", imageName: "fer", newsName: "The qualifying simulation runs", contentDesc: "A disrupted Friday’s running at Monza nonetheless saw Ferrari delight the umbrella-sporting tifosi, as Charles Leclerc"))
+        
+        news.append(News(title: "Verstappen confident Honda", imageName: "red", newsName: "Monza when he starts", contentDesc: "Max Verstappen was the only driver not to set a time in qualifying for the Italian Grand Prix, after his ‘Spec 4’ Honda engine developed problems"))
+        
+        self.tableView.dataSource = self
+        
+        
     }
+    
+    
 
     // MARK: - Table view data source
 

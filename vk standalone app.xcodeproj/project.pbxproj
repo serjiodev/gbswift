@@ -15,6 +15,7 @@
 		63327B4223002ADC00350B10 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63327B4123002ADC00350B10 /* LoginFormController.swift */; };
 		63327B442300370E00350B10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63327B432300370E00350B10 /* SecondViewController.swift */; };
 		63327B462300371D00350B10 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63327B452300371D00350B10 /* FirstViewController.swift */; };
+		639C90F6231D421C00B3C957 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639C90F5231D421C00B3C957 /* Images.xcassets */; };
 		639E18BE2301BF8400930D6A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E18BD2301BF8400930D6A /* TableViewCell.swift */; };
 		63ACFE072309D30F00747DB2 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACFE012309D30E00747DB2 /* Friend.swift */; };
 		63ACFE082309D30F00747DB2 /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACFE022309D30E00747DB2 /* GroupsCell.swift */; };
@@ -30,6 +31,7 @@
 		63B8A8032312EFE1006D76F0 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8A8012312EFE1006D76F0 /* NewsTableViewCell.swift */; };
 		63B8A8042312EFE1006D76F0 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B8A8022312EFE1006D76F0 /* NewsTableViewCell.xib */; };
 		63B8A80A2312FF94006D76F0 /* userPickerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8A8092312FF94006D76F0 /* userPickerControl.swift */; };
+		63FDE42423253A1F00E6B870 /* news.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDE42323253A1F00E6B870 /* news.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,7 @@
 		63327B4123002ADC00350B10 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 		63327B432300370E00350B10 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		63327B452300371D00350B10 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		639C90F5231D421C00B3C957 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		639E18BD2301BF8400930D6A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		63ACFE012309D30E00747DB2 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		63ACFE022309D30E00747DB2 /* GroupsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		63B8A8012312EFE1006D76F0 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		63B8A8022312EFE1006D76F0 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		63B8A8092312FF94006D76F0 /* userPickerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPickerControl.swift; sourceTree = "<group>"; };
+		63FDE42323253A1F00E6B870 /* news.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = news.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				63327B3B2300295000350B10 /* Info.plist */,
 				63D00B39230411C300A4F93F /* Controller */,
 				6330C21A23129AC5002E0927 /* GradientView.swift */,
+				639C90F5231D421C00B3C957 /* Images.xcassets */,
 			);
 			path = "vk standalone app";
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				63B8A7F62312E401006D76F0 /* NewsTableViewController.swift */,
 				63B8A8012312EFE1006D76F0 /* NewsTableViewCell.swift */,
 				63B8A8022312EFE1006D76F0 /* NewsTableViewCell.xib */,
+				63FDE42323253A1F00E6B870 /* news.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63327B3A2300295000350B10 /* LaunchScreen.storyboard in Resources */,
+				639C90F6231D421C00B3C957 /* Images.xcassets in Resources */,
 				63B8A8042312EFE1006D76F0 /* NewsTableViewCell.xib in Resources */,
 				63327B352300294F00350B10 /* Main.storyboard in Resources */,
 			);
@@ -249,6 +256,7 @@
 				6330C21B23129AC5002E0927 /* GradientView.swift in Sources */,
 				63ACFE162309D34200747DB2 /* GroupsController.swift in Sources */,
 				63ACFE072309D30F00747DB2 /* Friend.swift in Sources */,
+				63FDE42423253A1F00E6B870 /* news.swift in Sources */,
 				63327B442300370E00350B10 /* SecondViewController.swift in Sources */,
 				63ACFE082309D30F00747DB2 /* GroupsCell.swift in Sources */,
 				63B8A7F72312E401006D76F0 /* NewsTableViewController.swift in Sources */,
@@ -405,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "vk standalone app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -422,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "vk standalone app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

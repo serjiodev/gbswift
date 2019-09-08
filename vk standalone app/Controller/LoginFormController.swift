@@ -16,14 +16,50 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var titleTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var loginBtn: UIButton!
     
+    var wasAnimationShow = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleTopConstraint.constant = -50
+        loginTextField.alpha = 0
+        passwordTextField.alpha = 0
+        loginBtn.alpha = 0
+        
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboadr))
         scrollView?.addGestureRecognizer(hideKeyboardGesture)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if !wasAnimationShow {
+            wasAnimationShow = true
+            self.view.layoutIfNeeded()
+            UIView.animate(withDuration: 1, delay: 1, animations: {
+                self.titleTopConstraint.constant = 150
+                self.view.layoutIfNeeded()
+            }) { _ in
+                self.view.layoutIfNeeded()
+                UIView.animate(withDuration: 1, delay: 1, animations: {
+                    self.loginTextField.alpha = 1
+                    self.passwordTextField.alpha = 1
+                    self.view.layoutIfNeeded()
+                }) { _ in
+                    self.view.layoutIfNeeded()
+                    UIView.animate(withDuration: 1, delay: 1, animations: {
+                        self.loginBtn.alpha = 1
+                        self.view.layoutIfNeeded()
+                    }) { _ in
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)

@@ -12,26 +12,29 @@ struct User {
     let firstName: String
     let lastName: String
     let avatar: UIImage?
-   // let photos: [UIImage]
+    let photos: UIImage!
     
     
     static func getFriends() -> [User] {
         return [
 
-            User(firstName: "Kimi", lastName: "Raikkonen", avatar: UIImage(named: "KimiRaikkonen")),
+            User(firstName: "Kimi", lastName: "Raikkonen", avatar: UIImage(named: "KimiRaikkonen"), photos: UIImage(named: "KimiRaikkonen-1")),
             
-            User(firstName: "Lewis", lastName: "Hamilton", avatar: UIImage(named: "LewisHamilton")),
+            User(firstName: "Lewis", lastName: "Hamilton", avatar: UIImage(named: "LewisHamilton"), photos: UIImage(named: "LewisHamilton")),
             
-            User(firstName: "Max", lastName: "Verstappen", avatar: UIImage(named: "MaxVerstappen")),
+            User(firstName: "Max", lastName: "Verstappen", avatar: UIImage(named: "MaxVerstappen"), photos: UIImage(named: "MaxVerstappen")),
             
-            User(firstName: "Robert", lastName: "Kubica", avatar: UIImage(named: "RobertKubica")),
+            User(firstName: "Robert", lastName: "Kubica", avatar: UIImage(named: "RobertKubica"), photos: UIImage(named: "RobertKubica")),
             
-            User(firstName: "Sebastian", lastName: "Vettel", avatar: UIImage(named: "SebastianVettel")),
+            User(firstName: "Sebastian", lastName: "Vettel", avatar: UIImage(named: "SebastianVettel"), photos: UIImage(named: "SebastianVettel")),
             
-            User(firstName: "Valtteri", lastName: "Bottas", avatar: UIImage(named: "ValtteriBottas")),
+            User(firstName: "Valtteri", lastName: "Bottas", avatar: UIImage(named: "ValtteriBottas"), photos: UIImage(named: "ValtteriBottas")),
             
-            User(firstName: "George", lastName: "Russell", avatar: UIImage(named: "GeorgeRussell")),
+            User(firstName: "George", lastName: "Russell", avatar: UIImage(named: "GeorgeRussell"), photos: UIImage(named: "GeorgeRussell")),
         ]
     }
     
 }
+
+
+

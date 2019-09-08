@@ -10,24 +10,26 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var labelNews: UILabel!
-    
-    @IBOutlet weak var newsImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var pictureImageView: UIImageView!
+    @IBOutlet weak var newsName: UILabel!
+    @IBOutlet weak var contentDescLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+        self.selectionStyle = .none
     }
     
-    override func prepareForReuse() {
-        labelNews.text = nil
-        newsImageView.image = nil
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
+    func setupCellFromNews(_ news: News) {
+        self.titleLabel.text = news.title
+        self.pictureImageView.image = UIImage(named: news.imageName ?? "")
+        self.newsName.text = news.newsName
+        self.contentDescLabel.text = news.contentDesc
     }
     
 }
